@@ -1,4 +1,4 @@
-package com.iga.cursomc.resources;
+package com.iga.cursomc.resource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
