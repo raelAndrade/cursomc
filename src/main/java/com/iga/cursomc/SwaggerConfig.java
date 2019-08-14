@@ -36,8 +36,8 @@ public class SwaggerConfig {
 
     private ApiInfo apiInfo() {
         return new ApiInfo(
-          "CURSCO MODELAGEM CONCEITUAL REST API", 
-          "CURSCO MODELAGEM CONCEITUAL REST API", 
+          "MODELAGEM CONCEITUAL REST API", 
+          "MODELAGEM CONCEITUAL REST API", 
           "1.0.0", 
           "Terms of service", 
           new Contact("Israel Andrade", "www.israelandrade.com", "israelg.andrade@gmail.com"), 

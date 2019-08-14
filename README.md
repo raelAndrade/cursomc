@@ -29,6 +29,11 @@ preparar a resposta a ser dada.
 
 ### Documentação API
 
+http://localhost:8080/swagger-ui.html
+
+### Banco de dados inMemory - h2
+
+* [Console H2](http://localhost:8080/h2-console)
 
 ### Categoria - Endpoints
 

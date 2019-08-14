@@ -1,5 +1,9 @@
 package com.iga.cursomc.resource;
 
+import static com.iga.cursomc.resource.util.Constants.API;
+import static com.iga.cursomc.resource.util.Constants.V1;
+import static com.iga.cursomc.resource.util.Constants.PEDIDOS;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,7 +15,7 @@ import com.iga.cursomc.domain.Pedido;
 import com.iga.cursomc.services.PedidoService;
 
 @RestController
-@RequestMapping(value="/pedidos")
+@RequestMapping(API + V1 + PEDIDOS)
 public class PedidoResource {
 	
 	@Autowired
