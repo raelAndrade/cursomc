@@ -25,12 +25,7 @@ preparar a resposta a ser dada.
 
 ### Maven - Comando para executar Test
 
-./mvnw test
-
-### Persistência dados em tempo de execução - ( Opcional )
-
-* Caso deseja persistir dados automaticamente durante a execução da aplicação, 
-descomentar as linhas de insert que está no script " src/main/resources/data.sql ". 
+./mvnw test 
 
 ### Documentação API
 
