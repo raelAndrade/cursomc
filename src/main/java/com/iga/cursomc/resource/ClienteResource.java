@@ -1,4 +1,8 @@
-package com.iga.cursomc.resources;
+package com.iga.cursomc.resource;
+
+import static com.iga.cursomc.resource.util.Constants.API;
+import static com.iga.cursomc.resource.util.Constants.CLIENTES;
+import static com.iga.cursomc.resource.util.Constants.V1;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +15,7 @@ import com.iga.cursomc.domain.Cliente;
 import com.iga.cursomc.services.ClienteService;
 
 @RestController
-@RequestMapping(value="/clientes")
+@RequestMapping(API + V1 + CLIENTES)
 public class ClienteResource {
 	
 	@Autowired

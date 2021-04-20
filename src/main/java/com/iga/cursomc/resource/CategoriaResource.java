@@ -1,4 +1,8 @@
-package com.iga.cursomc.resources;
+package com.iga.cursomc.resource;
+
+import static com.iga.cursomc.resource.util.Constants.API;
+import static com.iga.cursomc.resource.util.Constants.V1;
+import static com.iga.cursomc.resource.util.Constants.CATEGORIAS;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +15,7 @@ import com.iga.cursomc.domain.Categoria;
 import com.iga.cursomc.services.CategoriaService;
 
 @RestController
-@RequestMapping(value="/categorias")
+@RequestMapping(API + V1 + CATEGORIAS)
 public class CategoriaResource {
 	
 	@Autowired
@@ -22,4 +26,16 @@ public class CategoriaResource {
 		Categoria obj = service.buscar(id);
 		return ResponseEntity.ok().body(obj);
 	}
+	
+//	@RequestMapping(method = RequestMethod.GET)
+//	public List<Categoria> listar(){
+//		Categoria cat1 = new Categoria(1, "Informática");
+//		Categoria cat2 = new Categoria(2, "Escritório");
+//		
+//		List<Categoria> lista = new ArrayList<>();
+//		lista.add(cat1);
+//		lista.add(cat2);
+//		
+//		return lista;
+//	}
 }
